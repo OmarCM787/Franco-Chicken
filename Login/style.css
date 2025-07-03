@@ -1,0 +1,111 @@
+body {
+    width: 100%;
+    background-image: url("../Imagenes/sabor.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0; 
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f3f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-container h2 span {
+  color: #e01c1c;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #e01c1c;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #c41818;
+}
+
+.register-text {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.register-text a {
+  color: #e01c1c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+.recuperacion-text a{
+  color: #e01c1c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recuperacion-text a:hover{
+    text-decoration: underline;
+}
+
+.regresar a {
+    position: fixed;       
+    top: 20px;             
+    left: 20px;            
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 2px 2px 8px #e01c1c;
+    color: #ffffff;
+}
