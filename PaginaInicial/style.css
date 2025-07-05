@@ -110,6 +110,7 @@ nav{
     .nav-links li:nth-child(4) {transition-delay: 0.4s;}
 }
 
+/* Portada de Pagina*/
 .portada {
   height: 500px;
   position: relative;
@@ -168,6 +169,77 @@ nav{
   background-color: #fbc02d;
 }
 
+/* Cards o Tarjetas del contenido de la pagina inicial*/
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem 1rem;
+justify-items: center;
+}
+
+.cards h2 {
+grid-column: 1 / -1;
+text-align: center;
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.card {
+width: 100%;
+max-width: 250px;
+border-radius: 10px;
+overflow: hidden;
+background: #fff;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+cursor: default;
+transition: all 400ms ease;
+}
+
+.card:hover {
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+transform: translateY(-3%);
+}
+
+.card img {
+width: 100%;
+height: 210px;
+object-fit: cover;
+}
+
+.card .contenido {
+padding: 15px;
+text-align: center;
+}
+
+.card .contenido h3 {
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.card .contenido a {
+text-decoration: none;
+display: inline-block;
+padding: 10px 20px;
+margin-top: 10px;
+color: #2fb4cc;
+border: 1px solid #2fb4cc;
+border-radius: 4px;
+transition: all 300ms ease;
+}
+
+.card .contenido a:hover {
+background: #2fb4cc;
+color: #fff;
+}
+
+/*------------*/
+
+
+/* El pie de Pagina*/
 .footer {
   background-color: #1c1c1c;
   color: #ccc;
