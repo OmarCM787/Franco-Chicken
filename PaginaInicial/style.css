@@ -42,7 +42,6 @@ nav{
   padding-left: 0;
 }
 
-
 .nav-links a{
     color: #fff;
     text-decoration: none;
@@ -64,7 +63,6 @@ nav{
     transition: all 0.3s ease;
     z-index: 1000;
 }
-
 
 .nav-links a:hover{
     opacity: 0.8;
@@ -132,6 +130,7 @@ nav{
   position: relative;
   overflow: hidden;
 }
+
 .portada-item {
   display: none;
   width: 100%;

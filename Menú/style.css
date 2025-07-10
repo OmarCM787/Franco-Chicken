@@ -6,6 +6,22 @@
     sans-serif;
 }
 
+#buscar-producto-box{
+  width: 100%;
+  max-width: 300px;   
+  font-size: 16px;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #07ca4f;
+  border-radius: 10px;
+  background-image: url('../Imagenes/Lupa.jpg');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 30px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
 nav{
     background-color: rgb(159, 2, 2);
     padding: 1rem 2rem;
@@ -25,7 +41,6 @@ nav{
   height: auto;
   padding-left: 0;
 }
-
 
 .nav-links a{
     color: #fff;
@@ -48,7 +63,6 @@ nav{
     transition: all 0.3s ease;
     z-index: 1000;
 }
-
 
 .nav-links a:hover{
     opacity: 0.8;
@@ -110,13 +124,142 @@ nav{
     .nav-links li:nth-child(4) {transition-delay: 0.4s;}
 }
 
-#buscar-producto{
-  justify-content: center;
+.titulo {
+  font-size: 3rem;
+  font-family: unset;
   align-items: center;
-  border-radius:8px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
-/*Parte Final de la Pagina*/
+.brasas {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.brasas h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: unset;
+  font: bold;
+}
+
+.cards-container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  
+}
+
+.card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  gap: 1rem;
+}
+
+.card img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card strong {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card button {
+  background-color: #007b0c;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.card button:hover {
+  background-color: #005f09;
+}
+
+/*Parrillas */
+.parrillas {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.parrillas h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: unset;
+  font: bold;
+}
+
+/*Bebidas*/
+.bebidas {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.bebidas h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: unset;
+  font: bold;
+}
+
+/*Platos a la Carta*/
+.platos {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.platos h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: unset;
+  font: bold;
+}
+
+/*Combos*/
+
+.combos {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.combos h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: unset;
+  font: bold;
+}
+
+/* El pie de Pagina*/
 .footer {
   background-color: #1c1c1c;
   color: #ccc;
@@ -185,4 +328,63 @@ nav{
   padding-top: 1rem;
   border-top: 1px solid #444;
   color: #aaa;
+}
+
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #buscar-producto-box {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .card img {
+    width: 120px;
+  }
+
+  .card .info {
+    align-items: center;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .brasas h2,
+  .parrillas h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }
