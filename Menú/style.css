@@ -146,8 +146,8 @@ nav{
 }
 
 .cards-container {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   
 }
@@ -259,6 +259,32 @@ nav{
   font: bold;
 }
 
+/* Promociones */
+.promociones {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.promociones h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: unset;
+  font: bold;
+}
+
+/*Postres*/
+.postres {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.postres h2 {
+font-size: 3rem;
+margin-bottom: 1.5rem;
+font-family: unset;
+font: bold;
+}
+
 /* El pie de Pagina*/
 .footer {
   background-color: #1c1c1c;
@@ -330,6 +356,7 @@ nav{
   color: #aaa;
 }
 
+/* Adaptacion para dispositivos moviles
 
 @media (max-width: 768px) {
   .nav-container {
@@ -388,3 +415,4 @@ nav{
     justify-content: center;
   }
 }
+*/
