@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polleria Franco Chicken</title>
+    <link rel="stylesheet" href="registrarse.css">
+</head>
+<body>
+    <!-- CONTENEDOR FLEX PRINCIPAL -->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <img src="../Imagenes/Logo2.png" alt="">
+                    </div>
+
+                    <input type="text" name="buscar" id="buscar-producto-box" placeholder="¿Que se te apetece hoy?">
+
+                    <button class="menu-btn" id="menuBtn">≣</button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="../PaginaInicial/index.html">Inicio</a></li>
+                        <li><a href="../Menú/carta.html">Carta</a></li>
+                        <li><a href="../Nosotros/nosotros.html">Contacto</a></li>
+                        <li><a href="../Login/index.html">Ingresar</a></li>
+                        <p>¡PIDE ONLINE!</p>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+       <div class="registro-form">
+            <h2>Regístrate</h2>
+            <p>¿Ya tienes cuenta? <a href="../Login/index.html">Inicia sesión</a></p>
+
+            <button class="google-btn">Continuar con Google</button>
+            <button class="facebook-btn">Continuar con Facebook</button>
+
+            <div class="divider">O continua con email</div>
+
+            <form>
+                <div class="form-row">
+                <input type="text" placeholder="Nombres" required />
+                <input type="text" placeholder="Apellidos" required />
+                </div>
+
+                <div class="form-row">
+                <select required>
+                    <option value="">Tipo de documento</option>
+                    <option value="dni">DNI</option>
+                    <option value="ce">Carnet de extranjería</option>
+                </select>
+                <input type="text" placeholder="Nro de documento" required />
+                </div>
+
+                <div class="form-row">
+                <select required>
+                    <option value="+51">+51 (PE)</option>
+                    <option value="+1">+1 (US)</option>
+                </select>
+                <input type="tel" placeholder="Número de teléfono" required />
+                </div>
+
+                <input type="email" placeholder="Email" required />
+
+                <div class="password-field">
+                <input type="password" placeholder="Contraseña" minlength="8" required />
+                <small>al menos 8 caracteres</small>
+                </div>
+
+                <ul class="password-rules">
+                <li class="invalid">❌ Como mínimo 8 caracteres</li>
+                <li class="invalid">❌ Al menos una mayúscula</li>
+                <li class="invalid">❌ Al menos una letra minúscula</li>
+                <li class="invalid">❌ Al menos un número</li>
+                <li class="invalid">❌ Al menos un carácter especial</li>
+                </ul>
+
+                <label class="checkbox">
+                <input type="checkbox" />
+                Quisiera recibir promociones y descuentos
+                </label>
+
+                <button type="submit" class="submit-btn">Registrar</button>
+
+                <p class="legal">
+                Al seleccionar “Registrar” o “Continuar con Google, Facebook o Apple”, aceptas los 
+                <a href="#">Términos y Condiciones</a> y la 
+                <a href="#">Política de Privacidad</a> de Franco Chicken.
+                </p>
+            </form>
+            </div>
+
+        
+        <!-- FOOTER SIEMPRE AL FINAL -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Mapa del sitio</h3>
+                    <ul>
+                        <li><a href="../Menú/carta.html">Carta</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Locales</a></li>
+                        <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorías</h3>
+                    <ul> 
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Brasas</a></li>
+                        <li><a href="#">Parrillas</a></li>
+                        <li><a href="#">Bebidas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legales</h3>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
+                        <li><a href="#">Razones sociales y RUC</a></li>
+                    </ul>
+                    <h3>Encuesta</h3>
+                    <a href="https://forms.gle/Br1FULRZ9uzN1KnD8" target="_blank">
+                        <img src="../Imagenes/Encuesta.png" alt="Encuesta" class="encuesta-img">
+                    </a>
+                </div>
+                <div class="footer-column social">
+                    <h3>Síguenos a través de</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/francochickenoriginal/" target="_blank">
+                            <img src="../Imagenes/FacebookLogo.png">
+                        </a>
+                        <a href="https://www.instagram.com/francochickenoriginal/" target="_blank">
+                            <img src="../Imagenes/InstagramLogo.png">
+                        </a>
+                    </div>
+                    <h3>Libro de reclamaciones</h3>
+                    <img src="../imagenes/libro.png" alt="Libro" class="libro-img">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Franco Chicken © 2025 - Todos los derechos reservados.
+            </div>
+        </footer>
+    </div> <!-- Fin del wrapper -->
+
+    <script src="script.js"></script>
+</body>
+</html>
