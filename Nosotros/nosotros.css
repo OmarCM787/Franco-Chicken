@@ -126,14 +126,57 @@ nav{
     .nav-links li:nth-child(4) {transition-delay: 0.4s;}
 }
 
-/*------------*/
-
 /*Cuerpo de Pagina*/
-
 .nosotros {
-  
+  text-align: center;
+  justify-content: center;
+  display: contents;
 }
 
+.nosotros h1 {
+  font-size: 50px;
+  padding: 5px 15px 25px 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.nosotros p {
+  display: grid;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: gray;
+  padding: 5px;
+  justify-content: center;
+}
+
+.sedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 1rem 0;
+    text-align: center;
+    flex-direction: row;
+}
+
+.sedes-titulo {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.sedes img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sedes img {
+  width: 500px;
+  align-items: center;
+  margin: 0 auto;
+}
 
 /* El pie de Pagina*/
 .footer {
