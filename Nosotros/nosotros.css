@@ -6,6 +6,13 @@
     sans-serif;
 }
 
+body {
+    background-image: url('../Imagenes/fondo2.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 #buscar-producto-box{
   width: 100%;
   max-width: 300px;   

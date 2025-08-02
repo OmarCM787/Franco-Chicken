@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+        background: #000;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        }
+
+        html {
+        height: 100%;
+        }
+
+        .loader {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: relative;
+        }
+
+        .loader-outter,
+        .loader-inner {
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        .loader-outter {
+        width: 100%;
+        height: 100%;
+        border: 4px solid #f31111;
+        border-left-color: transparent;
+        animation: rotate 1s cubic-bezier(0.15, 0.61, 0.58, 0.4) infinite;
+        }
+
+        .loader-inner {
+        width: 35px;
+        height: 35px;
+        border: 4px solid #ffe900;
+        border-top-color: transparent;
+        animation: rotate-reverse 1s cubic-bezier(0.15, 0.61, 0.58, 0.4) infinite;
+        }
+
+        @keyframes rotate {
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+        }
+
+        @keyframes rotate-reverse {
+        100% {
+            transform: translate(-50%, -50%) rotate(-360deg);
+        }
+        }
+    </style>
+    
+    
+</head>
+<body>
+        <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        </div>
+        <div class="loader">
+    <div class="circle"></div>
+
+    <div class="pc">
+        <div class="pcscreen"></div>
+
+        <div class="base-one"></div>
+        <div class="base-two"></div>
+    </div>
+
+    <div class="inner-sq"></div>
+    <div class="outer-sq"></div>
+
+    <div class="ipad">
+        <div class="line"></div>
+    </div>
+
+    <div class="phone"></div>
+    </div>
+</body>
+</html>
