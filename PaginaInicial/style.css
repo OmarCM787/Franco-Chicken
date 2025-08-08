@@ -196,6 +196,7 @@ nav{
     margin-right: auto;
     padding: 2rem 1rem;
     max-width: 1200px;
+    gap: 2rem;
 }
 
 .cards h2 {
@@ -247,6 +248,66 @@ nav{
 .card .contenido a:hover {
     background: #2fb4cc;
     color: #fff;
+}
+
+/* Boton de WhatsApp */
+.whatsapp-multi {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-options {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.whatsapp-options a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #25D366;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.whatsapp-options a:last-child {
+  border-bottom: none;
+}
+
+.whatsapp-options a:hover {
+  background-color: #f0f0f0;
+}
+
+#toggle-chat {
+  display: none;
+}
+
+#toggle-chat:checked + .whatsapp-button + .whatsapp-options {
+  display: flex;
 }
 
 /* FOOTER */
