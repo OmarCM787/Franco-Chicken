@@ -1,11 +1,6 @@
 body {
     width: 100%;
-    background-image: url("../Imagenes/sabor.jpg");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    margin: 0;
-    padding: 0; 
+    background-image: url("../Imagenes/fondo2.jpg");
 }
 
 main {
@@ -106,6 +101,9 @@ input[type="password"] {
     cursor: pointer;
     text-decoration: none;
     font-size: 20px;
-    box-shadow: 2px 2px 8px #e01c1c;
-    color: #ffffff;
+    box-shadow: 2px 2px 12px #e01c1c;
+    color: #040404;
+    font-weight: bold;
+    background-color: rgb(208, 7, 7);
 }
+
