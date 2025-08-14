@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franco Chicken</title>
+    <link rel="stylesheet" href="Cocinero.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div class="menu-container">
+                <div class="menu" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="brand">
+                <img src="../Img/Logo2.png" alt="" class="logo">
+                <span class="name"></span>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#" class="icons-header">
+                <img src="../icons/notification.svg" alt="question">
+            </a>
+            <span>Cocinero</span>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" id="btnPedidos">
+                        <img src="../icons/orders.svg" alt="">
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btnHistorial">
+                        <img src="../icons/historial.svg" alt="">
+                        <span>Historial</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="logout">
+            <img src="../icons/logout.svg" alt="Cerrar_Sesion">
+            <span>Cerrar Sesion</span>
+        </a>
+    </div>
+    <main id="seccionPedidos" class="pedidos">
+    <h2>Lista de Pedidos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID CLIENTE</th>
+                <th>Nr PEDIDO</th>
+                <th>NOMBRE</th>
+                <th>PEDIDO</th>
+                <th>DETALLES</th>
+                <th>FECHA</th>
+                <th>HORA</th>
+                <th>ESTADO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID01</td>
+                <TD>ORD-01</TD>
+                <td>Juan</td>
+                <td>1/4 de pollo</td>
+                <td><button class="detalles">Detalles</button></td>
+                <td>11/08/2025</td>
+                <td>12:30</td>
+                <td>
+                    <select name="estado" class="estado">
+                        <option value="pendiente">pendiente</option>
+                        <option value="preparacion">en preparacion</option>
+                        <option value="listo">listo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>ID02</td>
+                <TD>ORD-02</TD>
+                <td>Carlos</td>
+                <td>Parrilla Familiar</td>
+                <td><button class="detalles">Detalles</button></td>
+                <td>09/08/2025</td>
+                <td>14:00</td>
+                <td>
+                    <select name="estado" class="estado">
+                        <option value="pendiente">pendiente</option>
+                        <option value="preparacion">en preparacion</option>
+                        <option value="listo">listo</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<main id="seccionHistorial" class="contenido" style="display:none;">
+    <h2>Historial de ventas del día</h2>
+    <div class="seleccionar-fecha">
+        <label for="fecha">Selecciona una fecha:</label>
+        <input type="date" id="fecha" name="fecha" class="fecha">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID CLIENTE</th>
+                <th>PEDIDO</th>
+                <th>FECHA</th>
+                <th>HORA</th>
+                <th>CANTIDAD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID01</td>
+                <td>1/4 de pollo</td>
+                <td>11/08/2025</td>
+                <td>12:30</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>ID02</td>
+                <td>Parrilla Familiar</td>
+                <td>09/08/2025</td>
+                <td>14:00</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+    
+    <script src="Cocinero.js"></script>
+</body>
+</html>
