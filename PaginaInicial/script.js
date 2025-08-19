@@ -5,7 +5,7 @@ const portada = document.querySelector(".portada-item.active")
 
 const imagenes = [
     'url("../Imagenes/Buenazo.jpg")',
-    'url("../Imagenes/Brasas (1).jpg")',
+    'url("../Imagenes/Brasas.jpg")',
     'url("../Imagenes/ParrillaParados.jpg")',
     'url("../Imagenes/ParrillaFamiliar.jpg")',
 ]

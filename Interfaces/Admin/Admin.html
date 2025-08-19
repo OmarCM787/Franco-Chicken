@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franco Chicken</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div class="menu-container">
+                <div class="menu" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="brand">
+                <img src="../Img/Logo2.png" alt="" class="logo">
+                <span class="name"></span>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#" class="icons-header">
+                <img src="../icons/notification.svg" alt="question">
+            </a>
+            <span>Admin</span>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" id="BtnCarta">
+                        <img src="../icons/products.svg" alt="">
+                        <span>Carta</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="BtnPedidos">
+                        <img src="../icons/orders.svg" alt="">
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="BtnUsuarios">
+                        <img src="../icons/users.svg" alt="">
+                        <span>Usuarios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="BtnReportes">
+                        <img src="../icons/report.svg" alt="">
+                        <span>Reportes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="btnSettings">
+                        <img src="../icons/settings.svg" alt="">
+                        <span>Configuracion</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="logout">
+            <img src="../icons/logout.svg" alt="Cerrar_Sesion">
+            <span>Cerrar Sesion</span>
+        </a>
+    </div>
+
+    <main id="seccionCarta" class="carta">
+        <h2>Lista de Productos</h2>
+        <div class="agregar-producto">
+        <label for="producto">Agregar nuevo producto</label>
+        <button>Agregar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>DESCRIPCION</th>
+                    <th>PRECIO</th>
+                    <th>ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1/4 de pollo</td>
+                    <td>un cuarto de pollo + papas + ensalada</td>
+                    <td>S/ 13.00</td>
+                    <td>
+                        <button class="edit">editar</button>
+                        <button class="delete">eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1/2 de pollo</td>
+                    <td>Medio pollo + papas + ensalada</td>
+                    <td>S/ 25.00</td>
+                    <td>
+                        <button class="edit">editar</button>
+                        <button class="delete">eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <main id="seccionPedidos" class="pedidos" style="display:none;">
+        <h2>Lista de Pedidos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID CLIENTE</th>
+                    <th>Nr PEDIDO</th>
+                    <th>NOMBRE</th>
+                    <th>PEDIDO</th>
+                    <th>DETALLES</th>
+                    <th>FECHA</th>
+                    <th>HORA</th>
+                    <th>ESTADO</th>
+                    <th>ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ID01</td>
+                    <TD>ORD-01</TD>
+                    <td>Juan</td>
+                    <td>1/4 de pollo</td>
+                    <td><button class="detalles">Detalles</button></td>
+                    <td>11/08/2025</td>
+                    <td>12:30</td>
+                    <td>
+                        <select name="estado" class="estado">
+                            <option value="pendiente">pendiente</option>
+                            <option value="preparacion">en preparacion</option>
+                            <option value="listo">listo</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="edit">editar</button>
+                        <button class="delete">eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ID02</td>
+                    <TD>ORD-02</TD>
+                    <td>Carlos</td>
+                    <td>Parrilla Familiar</td>
+                    <td><button class="detalles">Detalles</button></td>
+                    <td>09/08/2025</td>
+                    <td>14:00</td>
+                    <td>
+                        <select name="estado" class="estado">
+                            <option value="pendiente">pendiente</option>
+                            <option value="preparacion">en preparacion</option>
+                            <option value="listo">listo</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="edit">editar</button>
+                        <button class="delete">eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <main id="seccionUsuarios" class="usuarios" style="display:none;">
+    <h2>Lista de Usuarios</h2>
+    <div class="agregar-usuario">
+        <label for="usuario">Agregar nuevo usuario</label>
+        <button>Agregar</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Id Usuario</th>
+                <th>Nombre</th>
+                <th>Rol</th>
+                <th>Email</th>
+                <th>Funciones</th>
+                <th>ACCIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Juan</td>
+                <td>Admin</td>
+                <td>juan12@gmail.com</td>
+                <td><select name="accion" id="">
+                    <option value="cocina">Cocina</option>
+                    <option value="cajera">Cajera</option>
+                    <option value="personal">personal</option>
+                </select></td>
+                <td>
+                    <button class="edit">editar</button>
+                    <button class="delete">eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<main id="seccionHistorial" class="historial" style="display:none;">
+    <h2>Historial de ventas del día</h2>
+    <div class="seleccionar-fecha">
+        <label for="fecha">Selecciona una fecha:</label>
+        <input type="date" id="fecha" name="fecha" class="fecha">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID CLIENTE</th>
+                <th>PEDIDO</th>
+                <th>FECHA</th>
+                <th>HORA</th>
+                <th>CANTIDAD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ID01</td>
+                <td>1/4 de pollo</td>
+                <td>11/08/2025</td>
+                <td>12:30</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>ID02</td>
+                <td>Parrilla Familiar</td>
+                <td>09/08/2025</td>
+                <td>14:00</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<main id="seccionConfiguracion" class="configuracion" style="display:none;">
+    <h2>Configuración del Sistema</h2>
+
+    <form class="config-form">
+        <!-- Datos del negocio -->
+        <fieldset>
+            <legend>Datos del Negocio</legend>
+            <label>Nombre de la polleria:
+                <input type="text">
+            </label>
+            <label>Dirección:
+                <input type="text">
+            </label>
+            <label>Teléfono:
+                <input type="text">
+            </label>
+            <label>Correo:
+                <input type="email">
+            </label>
+            <label>Logo:
+                <input type="file">
+            </label>
+        </fieldset>
+
+        <!-- Configuración de pedidos -->
+        <fieldset>
+            <legend>Pedidos</legend>
+            <label>Tiempo estimado de entrega (min):
+                <input type="number">
+            </label>
+            <label>Horario de apertura:
+                <input type="time">
+            </label>
+            <label>Horario de cierre:
+                <input type="time">
+            </label>
+        </fieldset>
+
+        <!-- Botones -->
+        <div class="form-actions">
+            <button type="submit" class="btn-guardar">Guardar Cambios</button>
+            <button type="reset" class="btn-restaurar">Restaurar</button>
+        </div>
+    </form>
+</main>
+    <script src="Admin.js"></script>
+</body>
+</html>
